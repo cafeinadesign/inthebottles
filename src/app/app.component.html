@@ -13,16 +13,19 @@
     </mat-toolbar-row>
   </mat-toolbar>
 </nav>
-<section class="destaque py-5">
+<section class="destaque">
  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <h1 class="mat-display-1 mb-1">Mundo do Vinho</h1>
+    <div class="row align-items-center">
+      <div class="col-7">
+        <h1 class="mat-display-1 mb-2">Mundo do Vinho</h1>
         <h3 class="mat-subheading-2 mb-4">Para degustar um vinho com consciência é necessário conhecer os principais vinhedos e os vinhos deles obtidos</h3>
         <div>
           <button mat-raised-button color="primary">Conheça o Mundo do Vinho</button>
           <button mat-button class="ml-3">Novidades</button>
         </div>
+      </div>
+      <div class="col-5">
+        <ng-lottie [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie>
       </div>
     </div>
  </div> 

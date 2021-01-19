@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "inthebottles"
+  "defaultProject": "inthebottles",
+  "cli": {
+    "analytics": "db88a485-474f-47e1-9b50-d7a6c3d26ef5"
+  }
 }

@@ -62,47 +62,12 @@ $md-mcgpalette0: (
         A700 : #ffffff,
     )
 );
-/* For use in src/lib/core/theming/_palette.scss */
-$md-mcgpalette1: (
-    50 : #fbeceb,
-    100 : #f5d0cc,
-    200 : #eeb1aa,
-    300 : #e79188,
-    400 : #e17a6f,
-    500 : #dc6255,
-    600 : #d85a4e,
-    700 : #d35044,
-    800 : #ce463b,
-    900 : #c5342a,
-    A100 : #ffffff,
-    A200 : #ffd4d2,
-    A400 : #ffa49f,
-    A700 : #ff8c85,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #000000,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
-);
-
-
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $inthebottles-primary: mat-palette($md-mcgpalette0);
-$inthebottles-accent: mat-palette($md-mcgpalette1);
+$inthebottles-accent: mat-palette($mat-grey, 900, 700, 800);
 
 // The warn palette is optional (defaults to red).
 $inthebottles-warn: mat-palette($mat-red);

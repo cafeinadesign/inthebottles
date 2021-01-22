@@ -1,15 +1,18 @@
-<nav>
-  <mat-toolbar>
+<nav class="mat-elevation-z6">
+  <mat-toolbar color="primary">
     <mat-toolbar-row class="container">
       <a id="logo" routerLink="/">
-        <img src="assets/logo.svg" alt="In The Bottles" width="auto" height="36" class="mr-2" />
+        <img src="assets/logo2.svg" alt="In The Bottles" width="auto" height="36" class="me-2" />
       </a>
-      <h2 class="mat-title mb-0">In The Bottles</h2>
-      <span class="spacer"></span>
+      <h2 class="mat-title mb-0 me-5">In The Bottles</h2>
       <a mat-button href="#quemsomos">Quem Somos</a>
-      <a mat-button href="#mundodovinho">Mundo do Vinho</a>
+      <a mat-button href="#mundo-do-vinho">Mundo do Vinho</a>
       <a mat-button href="#novidades">Novidades</a>
       <a mat-button href="#contato">Contato</a>
+      <span class="spacer"></span>
+      <a href="#it" class="p-1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAE2SURBVHjaYmSYyMDwgwEE/jEw/GF4mvT0HyqQUlX9B5aEIIAAYmH4wlDtWg1SDwT//0lKSv7/D+T9/w+nYmL+//79/88fIPll0yaAAGJhYAGJP/n69O+/v0CAUAcHt2////ULqJpRVhZoA0AAsQCtAZoMVP0HiP7+RlcNBEDVYA0Mv38DNQAEEMj8vwx//wCt/AdC/zEBkgagYoAAYgF6FGj277+///wlpAEoz8AAEEAgDX/BZv/69wuoB48GRrCTAAKICajh9//fv/6CVP/++wu7BrDxQFf/YWAACCCwk0BKf0MQdg1/gBqAPv0L9ANAALEAY+33vz+S3JIgb/z5C45CBkZGRgY4UFICKQUjoJMAAoiRoZSB4RMojkHx/YPhbNVZoM3AOISQQPUK9vaQOIYAgAADAC5Wd4RRwnKfAAAAAElFTkSuQmCC" alt="Italiano"></a>
+      <a href="#en" class="p-1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAflJREFUeNpinDRzn5qN3uFDt16+YWBg+Pv339+KGN0rbVP+//2rW5tf0Hfy/2+mr99+yKpyOl3Ydt8njEWIn8f9zj639NC7j78eP//8739GVUUhNUNuhl8//ysKeZrJ/v7z10Zb2PTQTIY1XZO2Xmfad+f7XgkXxuUrVB6cjPVXef78JyMjA8PFuwyX7gAZj97+T2e9o3d4BWNp84K1NzubTjAB3fH0+fv6N3qP/ir9bW6ozNQCijB8/8zw/TuQ7r4/ndvN5mZgkpPXiis3Pv34+ZPh5t23//79Rwehof/9/NDEgMrOXHvJcrllgpoRN8PFOwy/fzP8+gUlgZI/f/5xcPj/69e/37//AUX+/mXRkN555gsOG2xt/5hZQMwF4r9///75++f3nz8nr75gSms82jfvQnT6zqvXPjC8e/srJQHo9P9fvwNtAHmG4f8zZ6dDc3bIyM2LTNlsbtfM9OPHH3FhtqUz3eXX9H+cOy9ZMB2o6t/Pn0DHMPz/b+2wXGTvPlPGFxdcD+mZyjP8+8MUE6sa7a/xo6Pykn1s4zdzIZ6///8zMGpKM2pKAB0jqy4UE7/msKat6Jw5mafrsxNtWZ6/fjvNLW29qv25pQd///n+5+/fxDDVbcc//P/zx/36m5Ub9zL8+7t66yEROcHK7q5bldMBAgwADcRBCuVLfoEAAAAASUVORK5CYII=" alt="Inglês"></a>
+      <a href="#pt" class="p-1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHjSURBVHjaYmRIZkCAfwwMf2DkLzCCMyDoBwNAALEAlTVGN/5nYPj//x8Q/P3/9++/vzZa31gY/mw5z/Tn3x8g98+f37///fn99/eq2lUAAQTS8J/h/7NPz/9C5P79WRj89f9/zv//fztLvPVezPzrz+8/f3//+vtLhl8GaANAAIE1/P8PVA1U6qn7NVTqb1XVpAv/JH7/+a/848XmtpBlj39PO8gM1PP7z2+gqwACiAnoYpC9TF9nB34NVf5z4XpoZJbEjJKfWaEfL7KLlbaURKj8Opj08RfIVb+BNgAEEBPQW1L8P+b6/mb6//s/w+/+nc4F0/9P2cj65xdHc+p/QR39//9/AdHJ9A/60l8YvjIABBAT0JYH75jStv75zwCSMBY8BXTMxXv/21ezfHj9X5/3BESDy5JfBy7/ZuBnAAggkA1//vx594kpaCnLloe/smLaVT9/ff3y/+/P/w+u/+JuW7fhwS/tSayPXrOycrEyfGQACCAWoA1//oOCDIgm72fu4vy6b4LD/9/S/3///s9+S28yy+9/LEAf//kLChVgCAEEEEjD7z9/JHgkQeHwD8gUjV79O9r6CzPLv6lr1OUFwWH9Fxjcv//9BcYoA0AAMTI4ImIROUYRMf2XARkABBgA8kMvQf3q+24AAAAASUVORK5CYII=" alt="Português"></a>
     </mat-toolbar-row>
   </mat-toolbar>
 </nav>
@@ -17,11 +20,11 @@
  <div class="container">
     <div class="row align-items-center">
       <div class="col-7">
-        <h1 class="mat-display-1 mb-2">Mundo do Vinho</h1>
-        <h3 class="mat-subheading-2 mb-4">Para degustar um vinho com consciência é necessário conhecer os principais vinhedos e os vinhos deles obtidos</h3>
+        <h1 class="mat-display-3 mb-2">Mundo do Vinho</h1>
+        <h2 class="mat-subheading-2 lead mb-4">Para degustar um vinho com consciência é necessário conhecer os principais vinhedos e os vinhos deles obtidos</h2>
         <div>
-          <button mat-raised-button color="primary">Conheça o Mundo do Vinho</button>
-          <button mat-button class="ml-3">Novidades</button>
+          <a href="#mundo-do-vinho" button mat-raised-button color="primary">Conheça o Mundo do Vinho</a>
+          <a href="#novidades" button mat-button class="ms-3">Novidades</a>
         </div>
       </div>
       <div class="col-5">
@@ -30,3 +33,88 @@
     </div>
  </div> 
 </section>
+<main id="mundo-do-vinho">
+  <div class="container py-5">
+    <h1 class="mat-display-2 mb-2 text-center">Mundo do Vinho</h1>
+    <h4 class="mat-subheading-1 lead mb-3 text-center">Para degustar um vinho com consciência é necessário conhecer os principais vinhedos e os vinhos deles obtidos. Aqui está uma análise que se tornará cada vez mais abrangente, mesmo que jamais possa ser completa, porque somente na Itália estima-se que haja pelo menos 300 videiras (mas, talvez sejam o dobro) e por haver ao redor do mundo vinhos que valem a pena serem mencionados. Além disso, em ordem alfabética e explicados em palavras simples, os termos relativos à enologia e viticultura.</h4>
+    <div class="card-group mat-elevation-z6">
+      <a href="#" class="card">
+        <div class="row g-0">
+          <div class="col-md-4 bg-image" style="background-image: url('https://inthebottles.com/wp-content/uploads/2018/11/catia-climovich-1062253-unsplash-1024x683.jpg');"></div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="mat-headline">Palavras do Vinho</h5>
+              <p class="mat-body-1">Alguns termos relacionados ao vinho são conhecidos, outros pouco notórios ou recém-criados, outros, ainda, podem dar origem a diferentes interpretações. Neste pequeno dicionário enológico, você encontrará uma resposta para todas as suas dúvidas.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="card">
+        <div class="row g-0">
+          <div class="col-md-4 bg-image" style="background-image: url('https://inthebottles.com/wp-content/uploads/2018/11/karsten-wurth-inf1783-56781-unsplash-1024x678.jpg');"></div>
+            <div class="col-md-8">
+            <div class="card-body">
+              <h5>Vinhedos</h5>
+              <p class="mat-body-1">As principais características dos vinhedos nativos italianos e internacionais cultivados em todo o mundo. Com a descrição das uvas e muitas curiosidades históricas e geográficas.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="card">
+        <div class="row g-0">
+          <div class="col-md-4 bg-image" style="background-image: url('https://inthebottles.com/wp-content/uploads/2019/08/douglas-lopez-Lf5Xzq6NvWw-unsplash-min-1.jpg');"></div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5>Vinhos</h5>
+              <p class="mat-body-1">A vinificação, a composição e a história dos vinhos italianos e estrangeiros, que devem ser degustados ao menos uma vez. Mas, especialmente, muitas sugestões de harmonização com a comida. </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+<section id="novidades">
+  <div class="container py-5">
+    <h1 class="mat-display-2 mb-2 text-center">Novidades</h1>
+    <h4 class="mat-subheading-1 lead mb-3 text-center">O mundo do vinho está em constante fermentação (há também um famoso evento que se chama assim) e há sempre muitas iniciativas, em todas as regiões da Itália. Nesta secção encontrará notícias sobre os principais eventos do sector, a não perder para um público de entusiastas, bem como novidades sobre enologia, viticultura e tudo o que gira em torno deste maravilhoso universo.</h4>
+    <div class="row">
+      <div class="col-4">
+        <a href="#" class="card mat-elevation-z6 mb-3">
+          <img src="https://inthebottles.com/wp-content/uploads/2020/12/cuvage_campione_del_mondo-002.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BOLHAS E NÃO SÓ PARA A MESA DE FÉRIAS</h5>
+            <p class="mat-body-1 card-text">Tendo chegado ao final deste ano tão especial, só temos que brindar à esperança de um futuro melhor.</p>
+            <p class="card-text"><small class="text-muted">Dezembro 2020</small></p>
+          </div>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="#" class="card mat-elevation-z6 mb-3">
+          <img src="https://inthebottles.com/wp-content/uploads/elementor/thumbs/Merano-Wine-Festival-oyu8q1b6k554ufjypr4it66ttahc3cpnc0ticvaq0k.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MERANO WINE FESTIVAL NA VERSÃO DIGITAL</h5>
+            <p class="mat-body-1 card-text">O tão esperado encontro de novembro com o Festival do Vinho de Meranotambém ocorreu neste ano específico de 2020, mas em versão digital.</p>
+            <p class="card-text"><small class="text-muted">Novembro 2020</small></p>
+          </div>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="#" class="card mat-elevation-z6 mb-3">
+          <img src="https://inthebottles.com/wp-content/uploads/2020/10/MWW2020.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">A SEMANA DO VINHO DE MILÃO ESTÁ DE 3 A 11 DE OUTUBRO</h5>
+            <p class="mat-body-1 card-text">Presença e à distância a tão esperada Milan Wine Week regressa: já na sua terceira edição, o evento dedicado ao mundo do vinho mantém a sua sede no Palazzo Bovara no corso Venezia</p>
+            <p class="card-text"><small class="text-muted">Outubro 2020</small></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container text-center py-3">
+    <a href="/">In The Bottles</a> © 2021 Todos direitos reservados<br />
+    Desenvolvido pela <a href="https://cafeinadesign.github.io/">Cafeína Design</a>
+  </div>
+</footer>

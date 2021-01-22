@@ -26,7 +26,7 @@
     "@scullyio/init": "^1.0.1",
     "@scullyio/ng-lib": "^1.0.0",
     "@scullyio/scully": "^1.0.0",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^5.0.0-beta1",
     "jquery": "^3.5.1",
     "lottie-web": "^5.7.6",
     "ngx-lottie": "^6.4.0",

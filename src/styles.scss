@@ -4,13 +4,7 @@
 // Plus imports for other components in your app.
 
 // Bootstrap
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/carousel";
-@import "~bootstrap/scss/utilities"; // add css utilities
+@import "~bootstrap/scss/bootstrap";
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -34,12 +28,6 @@ $custom-typography2: mat-typography-config(
 
 @include angular-material-typography($custom-typography);
 @include mat-base-typography($custom-typography2);
-
-.mat-tab-label,
-.mat-tab-link {
-  // font-size: mat-font-size($config, subheading-1);
-  font-family: mat-font-family($custom-typography);
-}
 
 /* For use in src/lib/core/theming/_palette.scss */
 $md-mcgpalette0: (
@@ -137,4 +125,3 @@ $inthebottles-theme: mat-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

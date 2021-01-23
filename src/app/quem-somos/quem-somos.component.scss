@@ -1,0 +1,19 @@
+#destaque {
+    color: #9f1b41;
+    background-color: whitesmoke;
+    background-image: url('../../assets/bg2.jpg');
+    background-size: auto 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    h2.mat-subheading-2.lead{
+        color: black;
+        font-family: 'Open Sans';
+    }
+}
+#quem-somos {
+    p.mat-body {
+        font-size: 16px;
+        font-family: 'Open Sans';
+        text-align: justify;
+    }
+}

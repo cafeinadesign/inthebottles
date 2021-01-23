@@ -1,0 +1,76 @@
+section#destaque {
+    background-color: #e2d9de;
+    h1 {
+        color: #9f1b41;
+    }
+    h2.mat-subheading-2 {
+        font-family: 'Open Sans';
+    }
+}
+main#mundo-do-vinho {
+    background-color: whitesmoke;
+    h1 {
+        color: #9f1b41;
+    }
+    h4.mat-subheading-1 {
+        font-family: 'Open Sans';
+    }
+    a.card {
+        color: #333;
+        text-decoration: none;
+        .row {
+            height: 100%;
+        }
+        .bg-image {
+            background-size: cover;
+            background-position: center center;
+        }
+        .card-body {
+            h5 {
+                font: 400 24px/32px "Oswald", sans-serif;
+            }
+            p.mat-body-1 {
+                font: 400 14px/20px "Open Sans", sans-serif;
+            }
+        }
+    }
+    a.card:hover {
+        color: black;
+        h5 {
+            text-decoration: underline;
+        }
+    }
+}
+section#novidades {
+    h1 {
+        color: #9f1b41;
+    }
+    h4.mat-subheading-1 {
+        font-family: 'Open Sans';
+    }
+    a.card {
+        color: #333;
+        text-decoration: none;
+        .row {
+            height: 100%;
+        }
+        .bg-image {
+            background-size: cover;
+            background-position: center center;
+        }
+        .card-body {
+            h5 {
+                font: 400 24px/32px "Oswald", sans-serif;
+            }
+            p.mat-body-1 {
+                font: 400 14px/20px "Open Sans", sans-serif;
+            }
+        }
+    }
+    a.card:hover {
+        color: black;
+        h5 {
+            text-decoration: underline;
+        }
+    }
+}

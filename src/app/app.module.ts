@@ -19,12 +19,16 @@ export function playerFactory() {
 
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { HomeComponent } from './home/home.component';
 
 registerLocaleData(localePt, 'pt-BR');
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuemSomosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

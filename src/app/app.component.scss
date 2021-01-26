@@ -11,14 +11,33 @@ nav {
     }
 }
 footer {
-    background-color: black;
-    color: whitesmoke;
-    p.small {
-      line-height: 12px;
-      text-align: justify;
-    }
+  background-color: black;
+  color: whitesmoke;
+  p.small {
+    line-height: 12px;
+    text-align: justify;
+  }
+  a {
+    color: #f3f07a;
+  }
+}
+.show-small {
+  display: none;
+}
+.hide-small {
+  display: block;
+}
+@media (max-width: 575.98px) {
+  .show-small {
+    display: block;
+  }
+  .hide-small {
+    display: none;
+  }
+  nav.show-small {
+    background-color: #72081c;
     a {
-      color: #f3f07a;
+      color: whitesmoke;
     }
   }
-  
+}

@@ -1,7 +1,15 @@
+
+section#destaque > div {
+    background: rgb(0,0,0);
+    background: linear-gradient(125deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
 section#destaque {
-    background-color: #e2d9de;
-    h1 {
-        color: #9f1b41;
+    background-image: url('../../assets/Bons-vinhos.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    h1, h2.mat-subheading-2 {
+        color: whitesmoke
     }
     h2.mat-subheading-2 {
         font-family: 'Open Sans';
